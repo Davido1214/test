@@ -5,7 +5,8 @@ var buttonFunction = function(){
         var cut = savedUrl.split("=")
         var cut2 = cut[1]
         var cut3 = cut2.split("&")
-        console.log(cut3[0])
+        var userToken = cut3
+        return userToken
        },3000))
      
 
@@ -14,11 +15,11 @@ var buttonFunction = function(){
     }
      
     var getApis = function(search) {
+        var savedToken = buttonFunction()
        //this link is used to redirect the user to login. Right now the link redirects to one of my gitpages but once this page is properly running we switch the link to this page. Once redirected and authorized the url generates a new auth link which we need to replace the old expired one. (link expires every hour)
      
        //Im having trouble figuring out the best way to add this link and get the access code from the url
      
-       var accessToken = ''
      
     //    fetch("https://accounts.spotify.com/authorize?client_id=8e0821c9695d4b1aa5c76936afe8cbe6&redirect_uri=https://davido1214.github.io/test/&response_type=token", {mode: "no-cors"}).then(function(response){
     //        return response.json();
@@ -29,7 +30,7 @@ var buttonFunction = function(){
     //        console.log(data)
     //    })
      
-     
+
        fetch("https://api.spotify.com/v1/search?q=" + /*this will be the mood selector -> */"Sad" +
      
        "&type=" + /* this will be where the music options are selected -> */ "track%2Cartist%2Cplaylist"
@@ -39,7 +40,7 @@ var buttonFunction = function(){
                'Accept': 'application/json',
                'Content-Type': 'application/json',
                // the var AccesToken would replace the random string that make up the old token
-               'Authorization': 'Bearer BQAY3yh6noGFeVlTpFw_n1AaxGsJUr0PITIeOIB6vRw-CSM1AMPgunHKSsHzg8m_lJz_wRFmFVYRevATv_HQuVOWQmVDWe4aQAcucBi-xqO4CG1mTjU0WdKkiZPnjfaDpMs3WvYGUwaAHt7FDh4Z3HjtfFxsGnza-CNAoF_La7UUqJM',
+               'Authorization': 'Bearer'+ savedToken,
               
             }
        })
