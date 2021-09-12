@@ -17,8 +17,11 @@
     
     var getApis = function() {
 
-        var x = getAccess()
-        console.log(x + "this is the function over")
+        document.getElementById("btn").addEventListener("click", function(){
+            var x = getAccess()
+            console.log(x + "this is the function over")
+        })
+        
 
         fetch("https://api.spotify.com/v1/search?q=" + /*this will be the mood selector -> */"Sad" +
      
