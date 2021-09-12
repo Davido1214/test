@@ -4,7 +4,7 @@ var buttonFunction = function(){
     var myURl = function(){
         console.log(window.location.href)
     }
-   setTimeout(myURl(),500)
+   setTimeout(myURl(),5000)
     
      
     }
