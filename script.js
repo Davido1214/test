@@ -9,7 +9,7 @@
             var cut4 = cut3[0]
             var cut5 = cut4.split(",")
             var cut6 = cut5[0]
-            console.log()
+            console.log(cut6)
          },1000)
         
     };
