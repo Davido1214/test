@@ -1,7 +1,14 @@
     var getApis = function() {
 
-        document.getElementById("btn").addEventListener("click",function(){
-            location.href = 'https://accounts.spotify.com/authorize?client_id=8e0821c9695d4b1aa5c76936afe8cbe6&redirect_uri=https://davido1214.github.io/test/&response_type=token'
+        var btnID = document.getElementById("btn")
+        var newA = document.createElement("a")
+        newA.setAttribute("href",'https://accounts.spotify.com/authorize?client_id=8e0821c9695d4b1aa5c76936afe8cbe6&redirect_uri=https://davido1214.github.io/test/&response_type=token')
+        newA.innerHTML="<button>Sign In </button>"
+        btnID.appendChild()
+        btnID.addEventListener("click",function(){
+            
+            
+
         (setTimeout(function(){
             var savedUrl = window.location.href
             var cut = savedUrl.split("=")
@@ -10,7 +17,7 @@
             var cut4 = cut3[0]
             var cut5 = cut4.split(",")
             var cut6 = cut5[0]
-            console.log(cut6)
+            console.log()
 
             fetch("https://api.spotify.com/v1/search?q=" + /*this will be the mood selector -> */"Sad" +
      
@@ -31,7 +38,6 @@
            .then(function(data){
                console.log(data);
            });
-
          },1000))
 
         })
@@ -51,6 +57,8 @@
     //        console.log(data)
     //    })
      
+
+       
      
        var qouteApi = "https://goquotes-api.herokuapp.com/api/v1/all/quotes?New%20item=" + /* this will be the mood selector for quote api -> */ "sad";
      
