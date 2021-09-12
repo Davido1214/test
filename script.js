@@ -1,6 +1,6 @@
 var buttonFunction = function(){
-    location.href = 'https://accounts.spotify.com/authorize?client_id=8e0821c9695d4b1aa5c76936afe8cbe6&redirect_uri=https://davido1214.github.io/test/&response_type=token'.then(setTimeout(function(){
-        console.log(window.location.href)
+    location.href = 'https://accounts.spotify.com/authorize?client_id=8e0821c9695d4b1aa5c76936afe8cbe6&redirect_uri=https://davido1214.github.io/test/&response_type=token'
+    (setTimeout(function(){
         var savedUrl = window.location.href
         var cut = savedUrl.split("=")
         var cut2 = cut[1]
@@ -9,13 +9,18 @@ var buttonFunction = function(){
         var cut5 = cut4.split(",")
         var cut6 = cut5[0]
         console.log(cut6)
-        getApis(cut6)
+        getCode(cut6)
+        
 
        },1000))
     }
      
-    var getApis = function(mainCut) {
-        
+    var getApis = function() {
+
+        var getCode = function(theCode){
+            var x = theCode
+        }
+        console.log(getCode())
         
        //this link is used to redirect the user to login. Right now the link redirects to one of my gitpages but once this page is properly running we switch the link to this page. Once redirected and authorized the url generates a new auth link which we need to replace the old expired one. (link expires every hour)
      
