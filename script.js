@@ -1,13 +1,8 @@
     var getApis = function() {
-        var myDiv = document.getElementById("btn");
-        var myTag = document.createElement("a");
 
-        
-        myTag.setAttribute("href",'https://accounts.spotify.com/authorize?client_id=8e0821c9695d4b1aa5c76936afe8cbe6&redirect_uri=https://davido1214.github.io/test/&response_type=token')
-        myTag.innerHTML="<button>Sign In </button>"
-        myDiv.appendChild(myTag)
-        myDiv.addEventListener("click",function(){
-            (setTimeout(function(){
+        document.getElementById("btn").addEventListener("click",function(){
+            location.href = 'https://accounts.spotify.com/authorize?client_id=8e0821c9695d4b1aa5c76936afe8cbe6&redirect_uri=https://davido1214.github.io/test/&response_type=token'
+        (setTimeout(function(){
             var savedUrl = window.location.href
             var cut = savedUrl.split("=")
             var cut2 = cut[1]
@@ -15,7 +10,7 @@
             var cut4 = cut3[0]
             var cut5 = cut4.split(",")
             var cut6 = cut5[0]
-            console.log(cut6)
+            console.log()
 
             fetch("https://api.spotify.com/v1/search?q=" + /*this will be the mood selector -> */"Sad" +
      
