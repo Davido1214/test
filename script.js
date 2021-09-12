@@ -15,7 +15,7 @@ var buttonFunction = function(){
     }
      
     var getApis = function(mainCut) {
-        console.log(mainCut+"this is getapis")
+        
         
        //this link is used to redirect the user to login. Right now the link redirects to one of my gitpages but once this page is properly running we switch the link to this page. Once redirected and authorized the url generates a new auth link which we need to replace the old expired one. (link expires every hour)
      
@@ -41,7 +41,7 @@ var buttonFunction = function(){
                'Accept': 'application/json',
                'Content-Type': 'application/json',
                // the var AccesToken would replace the random string that make up the old token
-               'Authorization': 'Bearer BQAoODWqpMryy49nGNw3kIkeS9kNfxBd_RgMp7xBER-wXs0l_xkvY_zSN5AW8s64SMkCNoYyhpxf5sulgEMOSY1p99ahSbsubYxfGF64Q4qVii9p8J5MZY8ETL1SrakFVdfVNddCRotI7P9vZUYREgyJ0gnD_mt98mi3MxpySqaUaYg',
+               'Authorization': 'Bearer'+ mainCut,
               
             }
        })
