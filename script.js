@@ -7,7 +7,7 @@ var buttonFunction = function(){
         var cut3 = cut2.split("&")
         var cut4 = cut3[0]
         var cut5 = cut4.split(",")
-        console.log(userToken[0]+" wrong function")
+        console.log(cut5+" wrong function")
        },3000))
      
 
