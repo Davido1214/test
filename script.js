@@ -6,6 +6,7 @@ var buttonFunction = function(){
         var cut2 = cut[1]
         var cut3 = cut2.split("&")
         userToken = cut3
+        console.log(userToken+"wrong function")
         return userToken
        },3000))
      
@@ -15,7 +16,7 @@ var buttonFunction = function(){
     }
      
     var getApis = function(search) {
-        console.log(userToken)
+        console.log(userToken+"")
         
        //this link is used to redirect the user to login. Right now the link redirects to one of my gitpages but once this page is properly running we switch the link to this page. Once redirected and authorized the url generates a new auth link which we need to replace the old expired one. (link expires every hour)
      
