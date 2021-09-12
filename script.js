@@ -5,7 +5,8 @@ var buttonFunction = function(){
         var cut = savedUrl.split("=")
         var cut2 = cut[1]
         var cut3 = cut2.split("&")
-        userToken = cut3.split(",")
+        var cut4 = cut3[0]
+        var cut5 = cut4.split(",")
         console.log(userToken[0]+" wrong function")
        },3000))
      
