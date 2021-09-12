@@ -1,11 +1,12 @@
     var getApis = function() {
+        var myDiv = document.getElementById("btn");
+        var myTag = document.createElement("a");
 
-        var btnID = document.getElementById("btn")
-        var newA = document.createElement("a")
-        newA.setAttribute("href",'https://accounts.spotify.com/authorize?client_id=8e0821c9695d4b1aa5c76936afe8cbe6&redirect_uri=https://davido1214.github.io/test/&response_type=token')
-        newA.innerHTML="<button>Sign In </button>"
-        btnID.appendChild()
-        btnID.addEventListener("click",function(){
+        
+        myTag.setAttribute("href",'https://accounts.spotify.com/authorize?client_id=8e0821c9695d4b1aa5c76936afe8cbe6&redirect_uri=https://davido1214.github.io/test/&response_type=token')
+        myTag.innerHTML="<button>Sign In </button>"
+        myDiv.appendChild(myTag)
+        myDiv.addEventListener("click",function(){
             
             
 
