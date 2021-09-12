@@ -3,7 +3,8 @@ var buttonFunction = function(){
         console.log(window.location.href)
         var savedUrl = window.location.href
         var cut = savedUrl.split("=")
-        console.log(cut[1])
+        var cut2 = cut.split("&")
+        console.log(cut2[0])
        },3000))
      
 
