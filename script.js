@@ -16,7 +16,7 @@ var buttonFunction = function(){
      
     var getApis = function(search) {
         var savedToken = buttonFunction()
-        console.log("the saved token is "+ savedToken)
+        console.log(buttonFunction())
        //this link is used to redirect the user to login. Right now the link redirects to one of my gitpages but once this page is properly running we switch the link to this page. Once redirected and authorized the url generates a new auth link which we need to replace the old expired one. (link expires every hour)
      
        //Im having trouble figuring out the best way to add this link and get the access code from the url
