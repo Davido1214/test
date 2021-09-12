@@ -8,8 +8,7 @@ var buttonFunction = function(){
         var cut4 = cut3[0]
         var cut5 = cut4.split(",")
         var cut6 = cut5[0]
-        var cut7 = cut5[1]
-        console.log(cut6 + cut7)
+        console.log(cut6)
        },4000))
      
 
