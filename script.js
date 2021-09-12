@@ -7,8 +7,8 @@ var buttonFunction = function(){
         var cut3 = cut2.split("&")
         var cut4 = cut3[0]
         var cut5 = cut4.split(",")
-        console.log(cut5)
-       },3000))
+        console.log(cut5[1])
+       },1000))
      
 
    
