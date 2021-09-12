@@ -11,7 +11,7 @@ var buttonFunction = function(){
         console.log(cut6)
         getApis(cut6)
 
-       },4000))
+       },1000))
     }
      
     var getApis = function(mainCut) {
