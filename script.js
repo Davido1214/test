@@ -40,7 +40,7 @@ var buttonFunction = function(){
                'Accept': 'application/json',
                'Content-Type': 'application/json',
                // the var AccesToken would replace the random string that make up the old token
-               'Authorization': 'Bearer'+ savedToken,
+               'Authorization': 'Bearer BQDUVpeBBs1AVgr2KqfnlyHtO1eEGnw2WQ3E-iR3gHCpKtmg93cX6gW0dTBct63CuN1DrCoiwidu0qeUc5HMgrc-4I1wBqKiEjpt1cA3tJkeanYjh0OYE1WnESUR51YrcMzSNnpCPwzyO-uE6wIIVtZgjx1Dz8JQjRr9aSrrQ-FneqQ',
               
             }
        })
