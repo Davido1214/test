@@ -16,14 +16,14 @@ var buttonFunction = function(){
      
        var accessToken = ''
      
-       fetch("https://accounts.spotify.com/authorize?client_id=8e0821c9695d4b1aa5c76936afe8cbe6&redirect_uri=https://davido1214.github.io/test/&response_type=token", {mode: "no-cors"}).then(function(response){
-           return response.json();
-       })
-       .then(function(data){
-           var a = document.createElement("p")
-           a.innerHTML = data
-           console.log(data)
-       })
+    //    fetch("https://accounts.spotify.com/authorize?client_id=8e0821c9695d4b1aa5c76936afe8cbe6&redirect_uri=https://davido1214.github.io/test/&response_type=token", {mode: "no-cors"}).then(function(response){
+    //        return response.json();
+    //    })
+    //    .then(function(data){
+    //        var a = document.createElement("p")
+    //        a.innerHTML = data
+    //        console.log(data)
+    //    })
      
      
        fetch("https://api.spotify.com/v1/search?q=" + /*this will be the mood selector -> */"Sad" +
