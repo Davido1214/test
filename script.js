@@ -7,10 +7,7 @@
         myTag.innerHTML="<button>Sign In </button>"
         myDiv.appendChild(myTag)
         myDiv.addEventListener("click",function(){
-            
-            
-
-        (setTimeout(function(){
+            (setTimeout(function(){
             var savedUrl = window.location.href
             var cut = savedUrl.split("=")
             var cut2 = cut[1]
