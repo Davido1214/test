@@ -4,7 +4,8 @@ var buttonFunction = function(){
         var savedUrl = window.location.href
         var cut = savedUrl.split("=")
         var cut2 = cut[1]
-        console.log(cut2)
+        var cut3 = cut2.split("&")
+        console.log(cut3[0])
        },3000))
      
 
