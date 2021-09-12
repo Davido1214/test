@@ -1,16 +1,16 @@
     var getAccess = function(){
-            location.href = 'https://accounts.spotify.com/authorize?client_id=8e0821c9695d4b1aa5c76936afe8cbe6&redirect_uri=https://davido1214.github.io/test/&response_type=token'
+            location.href = 'https://accounts.spotify.com/authorize?client_id=8e0821c9695d4b1aa5c76936afe8cbe6&redirect_uri=https://davido1214.github.io/test/&response_type=token'.then(setTimeout(function(){
+                var savedUrl = window.location.href
+                var cut = savedUrl.split("=")
+                var cut2 = cut[1]
+                var cut3 = cut2.split("&")
+                var cut4 = cut3[0]
+                var cut5 = cut4.split(",")
+                var cut6 = cut5[0]
+                console.log(cut6)
+             },2000))
 
-        setTimeout(function(){
-            var savedUrl = window.location.href
-            var cut = savedUrl.split("=")
-            var cut2 = cut[1]
-            var cut3 = cut2.split("&")
-            var cut4 = cut3[0]
-            var cut5 = cut4.split(",")
-            var cut6 = cut5[0]
-            console.log(cut6)
-         },2000)
+        
         
     };
     
