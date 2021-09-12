@@ -38,7 +38,7 @@ var buttonFunction = function(){
                'Accept': 'application/json',
                'Content-Type': 'application/json',
                // the var AccesToken would replace the random string that make up the old token
-               'Authorization': 'Bearer BQBGGKwg9vwxQWixDkFKPHoykZgxP8Ji0b8tSkjJP9uOA_MFqCqH1ceBEjkHJwjCtEIN_-94otPx-LVpo7YtdZrTg3HYCIVRjDKwRPKgLENVMK1q5GGl4VnxqNBSe5lNaux5_CZHSnKGRoJhj_dpjQO-YwxVFXHfR6VaNqxqhipYCng',
+               'Authorization': 'Bearer BQAY3yh6noGFeVlTpFw_n1AaxGsJUr0PITIeOIB6vRw-CSM1AMPgunHKSsHzg8m_lJz_wRFmFVYRevATv_HQuVOWQmVDWe4aQAcucBi-xqO4CG1mTjU0WdKkiZPnjfaDpMs3WvYGUwaAHt7FDh4Z3HjtfFxsGnza-CNAoF_La7UUqJM',
               
             }
        })
