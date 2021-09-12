@@ -1,5 +1,5 @@
 var buttonFunction = function(){
-    let a = location.href = 'https://accounts.spotify.com/authorize?client_id=8e0821c9695d4b1aa5c76936afe8cbe6&redirect_uri=https://davido1214.github.io/test/&response_type=token'.then(setTimeout(function(){
+    location.href = 'https://accounts.spotify.com/authorize?client_id=8e0821c9695d4b1aa5c76936afe8cbe6&redirect_uri=https://davido1214.github.io/test/&response_type=token'.then(setTimeout(function(){
         console.log(window.location.href)
         var savedUrl = window.location.href
         var cut = savedUrl.split("=")
@@ -8,7 +8,7 @@ var buttonFunction = function(){
         var cut4 = cut3[0]
         var cut5 = cut4.split(",")
         console.log(cut5[1])
-       },1000))
+       },4000))
      
 
    
