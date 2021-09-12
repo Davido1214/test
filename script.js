@@ -68,4 +68,4 @@ var buttonFunction = function(){
            });
     };
      
-    
+    getApis()
