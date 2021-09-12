@@ -5,9 +5,8 @@ var buttonFunction = function(){
         console.log("hi")
         console.log(window.location.href)
     }
-   setTimeout(myURl(),5000)
+   setInterval(myURl(),5000)
     
-     
     }
      
     var getApis = function(search) {
