@@ -21,7 +21,7 @@
                'Accept': 'application/json',
                'Content-Type': 'application/json',
                // the var AccesToken would replace the random string that make up the old token
-               'Authorization': 'Bearer'+ cut6,
+               'Authorization': 'Bearer BQD49ZS0kKn8x2nDpYpru3YzpXGogg6DQMuzr_x3uggqAmnnBOb8USlzUhZTG5OadGfk3S4_wysHxtqJuW3PFFxKEv4ePLsuUG_IgJxeo3C_tlI3BuRd6eVSJgjML1JKWnu2rvD1xINvjnxsJ0AwTdOKaTrBzDAH-VfYkbiyOOC2X1'+ cut6,
               
             }
        })
