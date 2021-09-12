@@ -20,7 +20,7 @@ var buttonFunction = function(){
         var getCode = function(theCode){
             var x = theCode
         }
-        console.log(getCode())
+        console.log(getCode(theCode))
         
        //this link is used to redirect the user to login. Right now the link redirects to one of my gitpages but once this page is properly running we switch the link to this page. Once redirected and authorized the url generates a new auth link which we need to replace the old expired one. (link expires every hour)
      
@@ -46,7 +46,7 @@ var buttonFunction = function(){
                'Accept': 'application/json',
                'Content-Type': 'application/json',
                // the var AccesToken would replace the random string that make up the old token
-               'Authorization': 'Bearer'+ mainCut,
+               'Authorization': 'Bearer'+ getCode(theCode),
               
             }
        })
